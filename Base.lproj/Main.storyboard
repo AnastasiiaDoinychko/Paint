@@ -13,109 +13,14 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="wck-Hg-nRR">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="19" y="567" width="118" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="sliser:" destination="vXZ-lx-hvc" eventType="valueChanged" id="qal-9x-yO4"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FV4-ph-1jr">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <color key="tintColor" red="0.17610295170000001" green="0.26132417930000001" blue="0.23148840900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="240" y="567" width="118" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="btightness:" destination="vXZ-lx-hvc" eventType="valueChanged" id="T98-1J-qhe"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIZE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwN-et-eEA">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.17610295170000001" green="0.26132417930000001" blue="0.23148840900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="70" y="548" width="37" height="21"/>
-                                </variation>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rTq-Im-G71">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <color key="tintColor" red="0.86367582070000004" green="0.2057395749" blue="0.34628888569999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="19" y="517" width="96" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="rColor:" destination="vXZ-lx-hvc" eventType="valueChanged" id="1fi-gi-vt4"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hqi-b1-UqI">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <color key="tintColor" red="0.33230619410000001" green="0.65729561240000001" blue="0.30690227050000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="140" y="517" width="96" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="gColor:" destination="vXZ-lx-hvc" eventType="valueChanged" id="yB6-CT-pFZ"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPx-6U-uz7">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.86367582070707072" green="0.20573957485621194" blue="0.34628888567070171" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="55" y="498" width="35" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLUE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfA-cE-P5q">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.20360047966226666" green="0.43302059518543118" blue="0.84676846590909094" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="288" y="498" width="45" height="21"/>
-                                </variation>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5eR-Wn-U8R">
-                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                                <color key="tintColor" red="0.2036004797" green="0.43302059520000002" blue="0.84676846589999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="517" width="96" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="bColor:" destination="vXZ-lx-hvc" eventType="valueChanged" id="9eD-jF-CDO"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREEN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb0-wS-zLU">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.33230619410000001" green="0.65729561240000001" blue="0.30690227050000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="159" y="498" width="58" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRIGHT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYO-hd-6kL">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.17610295170000001" green="0.26132417930000001" blue="0.23148840900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="267" y="548" width="64" height="21"/>
-                                </variation>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-fQ-QXJ" customClass="DrawView" customModule="Paint" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="21" y="46" width="335" height="444"/>
+                                    <rect key="frame" x="21" y="68" width="335" height="444"/>
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mq2-H1-6tU">
@@ -126,44 +31,38 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="161" y="20" width="55" height="32"/>
+                                    <rect key="frame" x="45" y="15" width="55" height="32"/>
                                 </variation>
                                 <connections>
                                     <action selector="clearTapped" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t9d-m1-cKb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBm-JX-dSi">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="285" y="15" width="57" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="L8q-jR-heV" kind="show" id="XhJ-HM-eba"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.42456436974143674" green="0.85801290446569056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="wck-Hg-nRR"/>
-                                <exclude reference="FV4-ph-1jr"/>
-                                <exclude reference="nwN-et-eEA"/>
-                                <exclude reference="rTq-Im-G71"/>
-                                <exclude reference="hqi-b1-UqI"/>
-                                <exclude reference="FPx-6U-uz7"/>
-                                <exclude reference="WfA-cE-P5q"/>
-                                <exclude reference="5eR-Wn-U8R"/>
-                                <exclude reference="gb0-wS-zLU"/>
-                                <exclude reference="yYO-hd-6kL"/>
                                 <exclude reference="73Y-fQ-QXJ"/>
                                 <exclude reference="Mq2-H1-6tU"/>
+                                <exclude reference="CBm-JX-dSi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="wck-Hg-nRR"/>
-                                <include reference="FV4-ph-1jr"/>
-                                <include reference="nwN-et-eEA"/>
-                                <include reference="rTq-Im-G71"/>
-                                <include reference="hqi-b1-UqI"/>
-                                <include reference="FPx-6U-uz7"/>
-                                <include reference="WfA-cE-P5q"/>
-                                <include reference="5eR-Wn-U8R"/>
-                                <include reference="gb0-wS-zLU"/>
-                                <include reference="yYO-hd-6kL"/>
                                 <include reference="73Y-fQ-QXJ"/>
                                 <include reference="Mq2-H1-6tU"/>
+                                <include reference="CBm-JX-dSi"/>
                             </mask>
                         </variation>
                     </view>
@@ -172,11 +71,183 @@
                     <connections>
                         <outlet property="clean" destination="Mq2-H1-6tU" id="Ifp-iD-7OU"/>
                         <outlet property="drawView" destination="73Y-fQ-QXJ" id="gB3-Y5-YjW"/>
+                        <segue destination="FcX-0S-fpp" kind="unwind" unwindAction="unwindSettings:" id="uAm-Wc-Ubl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <exit id="FcX-0S-fpp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="298.5" y="370"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="yqh-WV-cgJ">
+            <objects>
+                <viewController id="L8q-jR-heV" customClass="SettingsVC" customModule="Paint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zNK-RZ-tZs"/>
+                        <viewControllerLayoutGuide type="bottom" id="RPp-DX-hrU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jyc-uU-cuz">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yF-YF-Ny7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back to paint">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="28" width="92" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="ITS-8E-88B" kind="unwind" unwindAction="unwindSettings:" id="UXh-B1-emN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcj-Df-G3i">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="170" y="95" width="60" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RED" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPx-6U-uz7">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.86367582070707072" green="0.20573957485621194" blue="0.34628888567070171" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="57" y="131" width="35" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GREEN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb0-wS-zLU">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.33230619410000001" green="0.65729561240000001" blue="0.30690227050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="45" y="178" width="58" height="21"/>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hqi-b1-UqI">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <color key="tintColor" red="0.33230619410000001" green="0.65729561240000001" blue="0.30690227050000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="169" width="118" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="gColor:" destination="L8q-jR-heV" eventType="valueChanged" id="L9q-ZL-SY2"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLUE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfA-cE-P5q">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.20360047966226666" green="0.43302059518543118" blue="0.84676846590909094" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="52" y="224" width="45" height="21"/>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3F6-58-j7f">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="127" width="118" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="rColor:" destination="L8q-jR-heV" eventType="valueChanged" id="BFh-N3-0BS"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIZE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj5-nl-xAp">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="182" y="294" width="37" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRIGHTNESS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5r-Y6-Yps">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="400" width="109" height="21"/>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="wck-Hg-nRR">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="144" y="323" width="118" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sliser:" destination="L8q-jR-heV" eventType="valueChanged" id="S9b-5D-c2j"/>
+                                    <action selector="sliser:" destination="vXZ-lx-hvc" eventType="valueChanged" id="qal-9x-yO4"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FV4-ph-1jr">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <color key="tintColor" red="0.17610295170000001" green="0.26132417930000001" blue="0.23148840900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="435" width="118" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="btightness:" destination="L8q-jR-heV" eventType="valueChanged" id="RPJ-yK-Hdv"/>
+                                    <action selector="btightness:" destination="vXZ-lx-hvc" eventType="valueChanged" id="T98-1J-qhe"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5eR-Wn-U8R">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <color key="tintColor" red="0.2036004797" green="0.43302059520000002" blue="0.84676846589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="215" width="118" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="bColor:" destination="L8q-jR-heV" eventType="valueChanged" id="P8W-FR-Anq"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2yF-YF-Ny7"/>
+                                <exclude reference="dcj-Df-G3i"/>
+                                <exclude reference="FPx-6U-uz7"/>
+                                <exclude reference="gb0-wS-zLU"/>
+                                <exclude reference="hqi-b1-UqI"/>
+                                <exclude reference="WfA-cE-P5q"/>
+                                <exclude reference="3F6-58-j7f"/>
+                                <exclude reference="fj5-nl-xAp"/>
+                                <exclude reference="m5r-Y6-Yps"/>
+                                <exclude reference="wck-Hg-nRR"/>
+                                <exclude reference="FV4-ph-1jr"/>
+                                <exclude reference="5eR-Wn-U8R"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2yF-YF-Ny7"/>
+                                <include reference="dcj-Df-G3i"/>
+                                <include reference="FPx-6U-uz7"/>
+                                <include reference="gb0-wS-zLU"/>
+                                <include reference="hqi-b1-UqI"/>
+                                <include reference="WfA-cE-P5q"/>
+                                <include reference="3F6-58-j7f"/>
+                                <include reference="fj5-nl-xAp"/>
+                                <include reference="m5r-Y6-Yps"/>
+                                <include reference="wck-Hg-nRR"/>
+                                <include reference="FV4-ph-1jr"/>
+                                <include reference="5eR-Wn-U8R"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXs-3k-xWY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ITS-8E-88B" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="370"/>
         </scene>
     </scenes>
 </document>
